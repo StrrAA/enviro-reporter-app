@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+    <name>Enviro-Reporter App</name>
+    <mobile_user>user</mobile_user>
+    <version>0.0.1</version>
+    <api>4.0</api>
+</application>

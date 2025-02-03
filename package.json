@@ -1,0 +1,9 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "journey-runtime-build"
+    },
+    "devDependencies": {
+        "@journeyapps/runtime-build": "^2.1.5"
+    }
+}

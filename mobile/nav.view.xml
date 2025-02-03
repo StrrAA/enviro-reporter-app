@@ -1,0 +1,16 @@
+<navigation>
+    <!-- 1. Sections -->
+    <!-- Be sure to give your section a descriptive title -->
+    <!-- <section label="Dashboard"> -->
+    <!-- And add relevant items -->
+    <!-- <item label="Home" icon="fa-home" view="home" /> -->
+    <!-- </section> -->
+    <section>
+        <item label="Home" icon="fa-home" view="main" />
+    </section>
+    <!-- 2. General Section -->
+    <!-- Add all app-specific items here -->
+    <general-section>
+        <item label="{$:themeLabel()}" icon="$:themeIcon()" on-press="$:toggleTheme()" />
+    </general-section>
+</navigation>

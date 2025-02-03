@@ -1,0 +1,83 @@
+{
+    "v4_color_overrides": {
+        "primary": "#1E88E5",
+        "primary_text": "#FFFFFF",
+        "secondary": "#63b5f3",
+        "secondary_text": "#FFFFFF",
+        "positive": "#02cf72",
+        "positive_text": "#FFFFFF",
+        "negative": "#FC3F48",
+        "negative_text": "#FFFFFF",
+        "info": "#0B4772",
+        "info_text": "#FFFFFF",
+        "warning": "#FFAB00",
+        "warning_text": "#FFFFFF",
+        "label": "#424242",
+        "label_text": "#FFFFFF",
+        "font_primary": "#111111",
+        "font_secondary": "#606060"
+    },
+    "themes": [
+        {
+            "name": "light",
+            "colors": {
+                "system": {
+                    "primary": "#1E88E5",
+                    "primary_text": "#FFFFFF",
+                    "secondary": "#63b5f3",
+                    "secondary_text": "#FFFFFF",
+                    "positive": "#02cf72",
+                    "positive_text": "#FFFFFF",
+                    "negative": "#FC3F48",
+                    "negative_text": "#FFFFFF",
+                    "info": "#0B4772",
+                    "info_text": "#FFFFFF",
+                    "warning": "#FFAB00",
+                    "warning_text": "#FFFFFF",
+                    "label": "#424242",
+                    "label_text": "#FFFFFF",
+                    "font_primary": "#111111",
+                    "font_secondary": "#606060"
+                },
+                "custom": {}
+            }
+        },
+        {
+            "name": "dark",
+            "colors": {
+                "system": {
+                    "primary": "#1E88E5",
+                    "primary_text": "#FFFFFF",
+                    "secondary": "#63b5f3",
+                    "secondary_text": "#FFFFFF",
+                    "positive": "#02cf72",
+                    "positive_text": "#FFFFFF",
+                    "negative": "#FC3F48",
+                    "negative_text": "#FFFFFF",
+                    "info": "#0B4772",
+                    "info_text": "#FFFFFF",
+                    "warning": "#FFAB00",
+                    "warning_text": "#FFFFFF",
+                    "label": "#90A4AE",
+                    "label_text": "#FFFFFF",
+                    "font_primary": "#FFFFFF",
+                    "font_secondary": "#FFFFFF"
+                },
+                "custom": {}
+            }
+        }
+    ],
+    "languages": ["en_US"],
+    "runtime_version": "4.90.2",
+    "flags": [
+        "object_tables2",
+        "object_tables3",
+        "buttons2",
+        "use_rvm_update",
+        "multiple_devices",
+        "sqlite_json1",
+        "navigation_component",
+        "typescript_mode",
+        "active_component"
+    ]
+}
