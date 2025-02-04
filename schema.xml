@@ -2,7 +2,7 @@
 <data-model>
     <!-- Do not remove this - it is used to store information about your app's users: -->
     <model name="user" label="User">
-        <field name="name" label="Name" type="text:name"/>
+        <field name="name" label="Name" type="text:name" />
 
         <display>{name}</display>
     </model>
@@ -17,7 +17,24 @@
 
         <belongs-to model="user" />
         <display>{message} ({user})</display>
-        <notify-user message="{message}" received-field="received_at" recipient-field="user"/>
+        <notify-user message="{message}" received-field="received_at" recipient-field="user" />
+    </model>
+    <model name="incident" label="incident">
+        <field name="incidentType" label="Incident Type" type="text" />
+        <field name="incidentCategory" label="Incident Category" type="text" />
+        <field name="description" label="Description" type="text" />
+        <field name="dateTime" label="Date and Time" type="datetime" />
+        <field name="location" label="Location" type="location" />
+        <field name="photoEvidence" label="Photo Evidence" type="photo" />
+        <field name="equipmentId" label="Equipment ID" type="text" />
+        <display>{incidentType} - {description}</display>
+        <!-- <display>incident</display> -->
+
+    </model>
+
+    <model name="app_state" label="App State">
+        <field name="current_location" label="Current Location" type="location" />
+        <display>Location</display>
     </model>
 
 </data-model>

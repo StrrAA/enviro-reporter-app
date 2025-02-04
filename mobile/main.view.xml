@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view title="Enviro-Reporter App">
+    
+    <!-- Fetch the count of incidents reported today -->
+    <var name="todayIncidentCount" type="integer" />
+    
+    <!-- Variables for data -->
+    <var name="airQuality" type="text" />
+    <var name="wildfireAlerts" type="text" />
+    <var name="mostSevereFire" type="text" />
+    <var name="currentLocation" type="location" />
+    
+    <capture-coordinates show-if="true" on-change="fetchAirQuality" bind="currentLocation" required="false" />
+
+    <!-- Display summary of incident reports -->
+    <info>
+        <heading>🌍 Environmental Hazards Overview</heading>
+        <paragraph>
+            Stay informed about environmental and construction hazards in your area.
+        </paragraph>
+    </info>
+
+    <info-table label="Statistics for your location. (GPS @ {currentLocation}">
+        <row label="🚨 Incidents Reported Today">{todayIncidentCount}</row>
+        <row label="🌫️ Air Quality Index">{airQuality}</row>
+        <row label="🔥 Wildfire Alerts">{wildfireAlerts}</row>
+        <row label="🔥 Most Intense Fire">{mostSevereFire}</row>
+    </info-table>
+    
+    
+    <button label="Report an Incident" on-press="reportIncident" validate="false" />
 
 </view>

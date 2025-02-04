@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view title="Incident Form">
+
+    <!-- VARIABLES -->
+    <var name="incidentType" type="single-choice">
+        <option key="Environmental">Environmental</option>
+        <option key="Construction">Construction</option>
+    </var>
+    <var name="location" type="location" />
+    <var name="description" type="text" />
+    <var name="dateTime" type="datetime" />
+    <var name="photoEvidence" type="photo" />
+    <var name="severity" type="single-choice">
+        <option key="low">Low</option>
+        <option key="medium">Medium</option>
+        <option key="high">High</option>
+    </var>
+    <var name="additionalNotes" type="text" />
+    <var name="incidentCategory" type="single-choice">
+        <option key="safety">Safety Hazard</option>
+        <option key="equipment">Equipment Malfunction</option>
+        <option key="tornado">Tornado</option>
+        <option key="injury">Personal Injury</option>
+        <option key="other">Other</option>
+    </var>
+    
+    <datetime-input bind="dateTime" label="Date and time" required="false" on-change="updateDate" />
+
+    <!-- Single Choice Dropdown -->
+    <single-choice-dropdown bind="incidentType" label="Incident Type" on-change="updateIncidentType" required="true" />
+
+    <!-- Incident Category -->
+    <single-choice-dropdown bind="incidentCategory" label="Incident Category" on-change="updateIncidentCategory" required="true" />
+    
+    <!-- Description Input -->
+    <text-input bind="description" label="Description" on-change="updateDescription" required="true" />
+
+    <!-- Capture Location -->
+    <capture-coordinates bind="location" label="Location" on-location="updateLocation" on-change="updateLocation" required="true" />
+
+    <!-- Capture Photo-Evidence -->
+    <capture-photo on-change="updatePhoto" bind="photoEvidence" label="Upload or capture photo" source="any" resolution="small" downloadable="true" required="false" />
+    
+    <single-choice-radio bind="severity" label="Severity" required="false" />
+    
+    <text-input bind="additionalNotes" label="Additional notes" on-change="updateDescription" required="false" />
+    
+    
+    
+    
+    
+    
+    <!-- Submit Button -->
+    <button label="Submit" on-press="onSubmit" validate="false" />
+
+</view>

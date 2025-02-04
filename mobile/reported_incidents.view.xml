@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view title="Reported Incidents">
+
+    <!-- Define the variable that stores incident reports -->
+    <var name="incidents" type="query:incident" />
+
+    <!-- Display the incidents in a table -->
+    <object-table label="Reported Incidents" query="incidents">
+        <column heading="Type">{incidentType}</column>
+        <column heading="Category">{incidentCategory}</column>
+        <column heading="Date">{dateTime}</column>
+        <column heading="Description">{description}</column>
+        <column heading="Location">{location.latitude}, {location.longitude}</column>
+        <column heading="Photo">{photoEvidence}</column>
+        <column heading="PhotoDisplay">
+            <display-photo bind="photoEvidence" label="Photo" />
+        </column>
+        <column heading="Actions">
+                <action label="Delete" icon="fa-trash" on-press="deleteIncident($selection.id)" />
+        </column>
+    </object-table>
+
+</view>

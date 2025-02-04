@@ -7,6 +7,8 @@
     <!-- </section> -->
     <section>
         <item label="Home" icon="fa-home" view="main" />
+        <item label="Incident Form" icon="fa-exclamation-triangle" view="incidentform" />
+        <item label="Reported Incidents" icon="fa-list" view="reported_incidents" />
     </section>
     <!-- 2. General Section -->
     <!-- Add all app-specific items here -->
